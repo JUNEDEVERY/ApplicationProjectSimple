@@ -36,6 +36,7 @@
 ![logo](https://github.com/JUNEDEVERY/ApplicationProjectSimple/blob/master/EditCode/Resources/second.png)
 
 2.1.2 Откроется код программы, после чего необходимо нажать на кнопку запуска проекта и следовать инструкции в консольном окне. 
+
 2.2. В случае, если выбирается вариант Download ZIP, скачается проект программы.
 
 ![logo](https://github.com/JUNEDEVERY/ApplicationProjectSimple/blob/master/EditCode/Resources/third.png)
@@ -48,6 +49,7 @@
 ![logo](https://github.com/JUNEDEVERY/ApplicationProjectSimple/blob/master/EditCode/Resources/four.png)
 
 2.2.2. Запустить проект с помощью программы **Microsoft Visual Studio**.
+
 2.3. Так же, после распаковки архива, можно запускать .exe файл из папки решения. [Более подробно тут.](https://www.youtube.com/watch?v=iIer4g23Bqk)
 
 ## Основные механизмы
