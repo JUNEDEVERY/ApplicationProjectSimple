@@ -6,6 +6,6 @@
 * Нажать на кнопку "Code".
 * Затем, после открывшегося выпадающего списка необходимо выбрать любой из последних пунктов ( Open with Visual Studio/Download ZIP"). В первом случае у нас клонируется репозиторий непосредственно в проект Visual Studio, а во втором, у нас скачается проект в виде .zip файла, который необходимо разархивировать любым архиватором в любое место на жестком диске, после запустить
       
-![logo](https://github.com/JUNEDEVERY/ApplicationProjectSimple/blob/master/EditCode/Resources/imgDownload.png)
+![logo](https://github.com/JUNEDEVERY/ApplicationProjectSimple/blob/master/EditCode/Resources/imgDownloads.png)
      
  
