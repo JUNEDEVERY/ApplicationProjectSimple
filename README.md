@@ -445,11 +445,6 @@ switch (changeVariable)
                             Console.WriteLine($"x{numberOfResources.GetLength(1) + 1 + i} = {stockOfProducts[i]} ");
                         }
                         break;
-</b></details>      
 ````
-</b></details>
-<details>
-<summary> Название Вашего скрытого текста </summary><br><b>
+      </b></details>      
 
-Здесь размещается Вашт скрытый текст
-</b></details>
