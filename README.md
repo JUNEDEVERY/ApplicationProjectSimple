@@ -258,22 +258,18 @@
 <details>
 <summary> Часть кода, запускающий функцию канонической задачи минимизации первой симплекс таблицы </summary><br><b>
 ````C#
+      
 switch (changeVariable)
                 {
-                    case 1: /// убран закомментированый участок кода, который не используется
-                            /// изменены названия трех переменных. выдал друго тип массиву. double кушает больше ОЗУ
-                        int[,] numberOfResources = new int[,] { { 6, 6 }, { 4, 2 }, { 4, 8 } }; // двумерный массив для хранения двух столбцов. она же - матрица
-                        int[] targetFunction = new int[] { 12, 15 }; // одномерный массив для хранения данных целевой функции
-                        int[] stockOfProducts = new int[] { 36, 20, 40 }; // одномерный массив для храненый данных о запасе ресурсов
+                    case 1:
+                        int[,] numberOfResources = new int[,] { { 6, 6 }, { 4, 2 }, { 4, 8 } }; 
+                        int[] targetFunction = new int[] { 12, 15 }; 
+                        int[] stockOfProducts = new int[] { 36, 20, 40 };
                         Console.Write("F = "); // Формирование целевой функции из введенных данных
                         for (int i = 0; i < targetFunction.Length; i++)
                         {
                             Console.Write($"{targetFunction[i]}x{i + 1} ");
-                            if (i != targetFunction.Length - 1) // i - индекса x.
-                                                                // если индекса икса не равен длине введенных коэффициентов функции, в которой вычли -1
-                                                                // условно говоря, осуществляется проверка на последний х
-                                                                // если икс последний ставим ему +макс
-                            {
+                            if (i != targetFunction.Length - 1) 
                                 Console.Write("+ ");
                             }
                             else
@@ -286,9 +282,9 @@ switch (changeVariable)
                         {
                             for (int j = 0; j < numberOfResources.GetLength(1); j++) // 1 - столбцы
                             {
-                                Console.Write($"{numberOfResources[i, j]}x{j + 1} "); // т.к индекс массива с нуля. мы ставим +1 для того чтобы в уравнении начинать не с х0, а с х1
+                                Console.Write($"{numberOfResources[i, j]}x{j + 1} "); 
 
-                                if (j != numberOfResources.GetLength(1) - 1) // j - индекс икса помощь от андрея с обьясниненим в painte                                           
+                                if (j != numberOfResources.GetLength(1) - 1) 
                                 {
                                     Console.Write("+ ");
                                 }
@@ -299,16 +295,14 @@ switch (changeVariable)
                                 }
                             }
                         }
-                        for (int i = 0; i < targetFunction.Length; i++) // цикл который идет до длины целевой функции, от которой вычли -1.
-
+                        for (int i = 0; i < targetFunction.Length; i++) 
                         {
                             Console.Write($"x{i + 1}"); // вывод строки с граничными условиями
                             if (i != targetFunction.Length - 1)
                             {
                                 Console.Write(", ");
                             }
-                            else Console.Write(" >=0; ");
-                            // цикл без i <= function.Length -1 позволяет добавлять х1,х2 и х3 взависимости от того, сколько указано значений в переменной function(целевая функция)
+                            else Console.Write(" >=0; ");         
                             //Console.Write($"x{i + 1} >= 0 "); // вывод строки с граничными условиями
                         }
                         // Построение канонической задачи минимизации
@@ -329,8 +323,7 @@ switch (changeVariable)
                         }
                         Console.WriteLine();
                         /// измненено название переменной
-                        int dummyVariable = numberOfResources.GetLength(1) + 1; // индекс фиктивной переменной с количеством столбцов
-                                                                                // для создания фиктивной переменной нам необходимо получить индекс последней переменной и к ней прибавить +1
+                        int dummyVariable = numberOfResources.GetLength(1) + 1;
                         for (int i = 0; i < numberOfResources.GetLength(0); i++)
                         {
                             for (int j = 0; j < numberOfResources.GetLength(1); j++)
@@ -365,7 +358,7 @@ switch (changeVariable)
                             }
                         }
 
-                        for (int i = numberOfResources.GetLength(1) + 1; i < stockOfProducts.Length + numberOfResources.GetLength(1) + 1; i++)
+                        for (int i = numberOfResources.GetLength(1) + 1; i < stockOfProducts.Length+ numberOfResources.GetLength(1) + 1; i++)
                         // т.к у нас всего х1 и х2, нам необходимо начать цикл со следующего - т.е х3
                         //цикл продолжаем до последнего х
                         {
