@@ -4,7 +4,7 @@ namespace ApplicationProjectSimple /// изменено название реш�
 {
     class Programm
     {
-        public static void GenerateModel(int[,] numberOfResources, int[] targetFunction, int[] reserveResource)
+        public static void GenerateModel(int[,] numberOfResources, int[] targetFunction, int[] reserveResource) /// изменен метод на нотацию паскаля
         {
             Console.WriteLine("Для вас представлена математическая модель\n");
             Console.Write("F = "); //Формирование целевой функции из введенных данных
@@ -63,7 +63,7 @@ namespace ApplicationProjectSimple /// изменено название реш�
                 }
             }
         }
-
+        /// изменен метод на нотацию паскаля
         public static void GenerateModelWithoutProm(int[,] numberOfResources, int[] targetFunction, int[] reserveResource)
         {
             Console.WriteLine("Для вас представлена математическая модель\n");
@@ -247,7 +247,7 @@ namespace ApplicationProjectSimple /// изменено название реш�
                 Console.WriteLine();
             }
         }
-
+        /// изменен метод на нотацию паскаля
         public static void GenerateModelwithStable(int[,] numberOfResources, int[] targetFunction, int[] reserveResource)
         {
             Console.WriteLine("Для вас представлена математическая модель\n");
