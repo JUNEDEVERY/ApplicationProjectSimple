@@ -441,4 +441,6 @@ switch (changeVariable)
                         break;
 ````
 </b></details>      
+## Авторы
+* **Герасимов** - [JUNEDEVERY](https://github.com/JUNEDEVERY)
 
