@@ -440,5 +440,5 @@ switch (changeVariable)
                         }
                         break;
 ````
-      </b></details>      
+</b></details>      
 
